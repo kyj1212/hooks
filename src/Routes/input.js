@@ -2,17 +2,23 @@ import { useState } from "react";
 import {Link} from "react-router-dom"
 
 
-const [put,setPut] = useState("")
+
 
 function Input(){
-    function onChange(event){
-        setPut()
+    const [put,setPut] = useState("")
 
+    function onChange(event){
+        setPut(event.target.value)
     }
 
+
     return(
-        <input onChange={onChange}  value={put} type="text"></input>
-        <button Link to="/hook"></button>
+        <div>
+           <input  onChange={onChange}  value={put} type="text"></input>
+           <Link to={{pathname:'/hook', search:`value=${put}`}}>
+           <button>move</button>
+           </Link>
+        </div>
     )
 }
 
