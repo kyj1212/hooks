@@ -1,21 +1,16 @@
-import { render } from "react-dom";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import Input from './Routes/input'
-import Button from './Routes/button'
+import { buildQueries } from "@testing-library/react";
+import Home from "./component/home";
+import Menu from "./component/menu";
+import Router from './router'
 
-const App = () => {
- return (
- <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<Input/>}/>
-      <Route path="/hook" element={<Button/>}/>
-    </Routes>
-  </BrowserRouter>
-)
+
+function App(){
+    
+    return(
+       <div>
+           <Router></Router>
+        </div>         
+    )
 }
 
 export default App;
