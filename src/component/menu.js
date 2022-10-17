@@ -32,11 +32,13 @@ function Menu(){
                 Our Menu
             </div>
             <div class='pizza'>
-
+            
                 <div class='cheesephotodiv'>
                     <img class='cheesephoto' src='/img/pizza.png'></img>
                     <h2 class='cheeseinfor'>Cheese Pizza</h2>         
-                    <h4 class='cheeseprice'>$19.12 <button class='button'>장바구니</button></h4>
+                    <h4 class='cheeseprice'>                  
+                    $19.12 <button class='button'>장바구니</button>
+                    </h4>
                 </div>
 
                 <div class='gogumaphotodiv'>
