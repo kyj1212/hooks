@@ -69,7 +69,6 @@
     top:200px
     
 }
-
 .ourmenu{
     position: absolute;
     left: 550px;
@@ -85,135 +84,105 @@
     border-radius: 12px;
     line-height: 30px;  
 }
-.shopbag{
+.shoppingtitle{
     display: flex;
     justify-content: center;
-    font-size: 33px;
-    font-weight: bold;
-    border-bottom: 4px solid black;
-    height: 80px;
+    align-items: center;
+    height: 100px;
+    border-bottom: solid 4px gray;
 }
-.shopbagspan{
-    position: relative;
-    top: 20px;
+.shoppingbox{
+    width: 600px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .checkbox{
     zoom: 1.4;
     position: relative;
-    top:2px
+    top:2px;
 }
 .removebutton{
     background-color: white;
     border: 1px solid ;
     height: 33px;
-    margin-left: 400px;
 }
-.shopdiv{
+.productpizza{
+    font-weight: bold;
+    height: 50px;
+    width: 600px;
+    border-bottom: 2px solid gray;
+}
+.productpizzaspan{
+    position: relative;
+    left: 5px;
+}
+.product{
+    width: 600px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray; 
+}
+.productimgdiv{
+    height: 100px;
+    width:120px;
+    overflow: hidden;
     display: inline-block;
     position: relative;
-    left: 20px;
-    top: 40px
+    right: 20px;
+    top: 20px;
 }
-.pizzaproductname{
+.labelboxcheese{
     position: relative;
-    height: 80px;
+    left: 1px;
+}
+.productimg{
+    width: 100%;
+    height: 100%;
+}
+.pizzatitle{
+    position: relative;
+    right: 40px;
+    top: 10px;
     font-weight: bold;
-    font-size: 20px;
-    border-bottom: 3px solid gray;
-}
-.pizzaproductnamesp{
-    position: relative;
-    top:40px;
-}
-.cheeselabel{
-    position: relative;
-    bottom: 60px;
-}
-.cheeseheight{
-    height: 200px;
-    border-bottom: 1px solid gray;
-}
-.shopcheeseimg{
-    height: 90px;
-    position: relative;
-    left:25px;
-    top:30px;
-}
-.cheesefont{
-    position: relative;
-    left: 60px;
-    bottom: 60px;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 17px;
 }
 .cheesevalue{
-    background-color: white;
-    height: 40px;
-    width: 50px;
-    border: solid 2px rgba(220, 220, 220, 0.792);
-    position: relative;
-    left: 140px
-    
+    width: 20px;
+    height: 20px;
 }
 .cheeseadd{
-    background-color: white;
-    border: solid 2px rgba(220, 220, 220, 0.792);
-    position: relative;
-    left: 140px;
-    bottom: 10px;
-    width: 30px;
+    background-color: rgb(64, 151, 222);
+    color: white;
+    border: 2px solid rgb(64, 151, 222);
+    border-radius: 10px
 }
 .cheesesub{
-    background-color: white;
-    border: solid 2px rgba(220, 220, 220, 0.792);
-    position: relative;
-    left: 110px;
-    top: 10px;
-    width: 30px;
+    background-color: rgb(64, 151, 222);
+    color: white;
+    border: 2px solid rgb(64, 151, 222);
+    border-radius: 10px
 }
-.cheeseprice{
-    position: relative;
-    top: 50px;
-    left: 60px;
-}
-.payment{
-   display: inline-block;
-   position: relative;
-   left: 200px;
-   bottom: 80px;
-   height: 180px;
-   width: 270px;
-   border: 2px solid rgba(220, 220, 220, 0.792);
-}
-.expectpay{
-    position: relative;
-    top: 20px;
-    border-bottom: 3px solid rgba(220, 220, 220, 0.792);
-}
-.expectpayspan{
-    position: relative;
-    left: 10px;
-    bottom: 10px;
-}
-.expectpayspan2{
-    position: relative;
-    top: 40px;
-    left: 10px;
-    font-weight: bold;
-}
-.realpatment{
-    position: relative;
-    top: 39px;
-    left: 120px;
-}
-.finshpay{
+.addsub{
     position: relative;
     top: 80px;
-    left: 20px;
-    background-color: rgb(62, 222, 222);
-    color: white;
-    border: 1px solid white;
-    font-weight: bold;
-    height: 42px;
-    width: 240px;
 }
+
+
+.testtest{
+    display: inline-block;   
+}
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+
+

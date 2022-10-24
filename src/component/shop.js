@@ -26,11 +26,12 @@ function Shop(){
     }
 
     return(
-        <motion.div
-        initial={{opacity : 0}}
-        animate={{opacity : 1}}
-        exit={{opacity : 0}}
-        >
+    <motion.div
+    initial={{opacity : 0}}
+    animate={{opacity : 1}}
+    exit={{opacity : 0}}
+    >   
+        
            <div class='height'>
                 <div className="pizzaname">
                     <h2>Pedro Pizza</h2>
@@ -41,43 +42,43 @@ function Shop(){
                     <h2 class="firstorderbutton">Shopping</h2>
                     <h2 class='loginbutton'>Login</h2>   
                 </div>  
+            </div>       
+            <div className='shoppingtitle'>
+                <h1>장바구니</h1>
             </div>
-            <div class="shopbag">
-                <span class='shopbagspan'>장바구니</span> 
-            </div>
-            <div class='shopdiv'>       
-                <label class='labelbox'>
-                    <input class='checkbox' type="checkbox"/>전체 선택
-                </label>
-                <button class='removebutton'>
-                    선택 삭제
-                </button><br/>
-                <div class='pizzaproductname'>
-                   <span class='pizzaproductnamesp'>Pedro's Pizza 상품(3개)</span>
+
+        <div className='box'>
+            <div className='testtest'>
+                <div className='shoppingbox'>      
+                    <label class='labelbox'>
+                        <input class='checkbox' type="checkbox"/>전체 선택
+                    </label>
+                    <button class='removebutton'>
+                        선택 삭제
+                    </button>
                 </div>
-                <div class='cheeseheight'>
-                    <label class='cheeselabel'>
+                <div className='productpizza'>
+                    <span className='productpizzaspan'>Pedro's Pizza Product (3개)</span>
+                </div>
+                <div className='product'>
+                    <label class='labelboxcheese'>
                         <input class='checkbox' type="checkbox"/>
                     </label>
-                    <img class='shopcheeseimg' src='/img/pizza.png'></img>
-                    <span class='cheesefont'>
-                        [Pedro] Cheese Pizza
+                
+                    <div className='productimgdiv'>
+                        <img className='productimg' src='/img/pizza.png'></img>                  
+                    </div>
+                    <span className='pizzatitle'>[Pedero] Cheese Pizza</span>
+                    <span className='addsub'>
+                        <input type='text' class='cheesevalue' value='1'></input>
+                        <button class='cheeseadd'>추가</button>
+                        <button class='cheesesub'>삭제</button>
                     </span>
-                    <button class='cheesevalue'>{cheesequan}</button>
-                    <button onClick={addbutton} class='cheeseadd'>+</button>
-                    <button onClick={subbutton} class='cheesesub'>-</button>
-                    <span class='cheeseprice'>19.12$</span>
                 </div>
-            </div>
-            <div class='payment'>
-                <div class='expectpay'>
-                    <span class='expectpayspan'>예상결제금액</span>
-                </div>
-                <span class='expectpayspan2'>예상결제금액</span>
-                <span class='realpatment'>{price}$</span>
-                <button class='finshpay'>주문하기 ({cheesequan}개)</button>
-            </div>   
-        </motion.div>
+            </div>       
+            <span className='hell'>asd</span>
+        </div>
+    </motion.div>
     )
 }
 
