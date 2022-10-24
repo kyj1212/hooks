@@ -130,9 +130,9 @@
     width:120px;
     overflow: hidden;
     display: inline-block;
-    position: relative;
-    right: 20px;
-    top: 20px;
+    padding-top: 25px;
+    padding-left: 5px;
+    
 }
 .labelboxcheese{
     position: relative;
@@ -143,11 +143,12 @@
     height: 100%;
 }
 .pizzatitle{
-    position: relative;
-    right: 40px;
-    top: 10px;
     font-weight: bold;
     font-size: 17px;
+    padding-right: 90px;
+    padding-top: 10px;
+
+
 }
 .cheesevalue{
     width: 20px;
@@ -166,18 +167,10 @@
     border-radius: 10px
 }
 .addsub{
-    position: relative;
-    top: 80px;
+   padding-top: 80px;
 }
 
 
-.testtest{
-    display: inline-block;   
-}
-.box{
-    display: flex;
-    justify-content: space-between;
-}
 
 
 
