@@ -160,16 +160,75 @@
     border: 2px solid rgb(64, 151, 222);
     border-radius: 10px
 }
+
 .cheesesub{
     background-color: rgb(64, 151, 222);
     color: white;
     border: 2px solid rgb(64, 151, 222);
     border-radius: 10px
 }
+
 .addsub{
    padding-top: 80px;
 }
 
+.testtest{
+    display: inline-block;
+}
+
+.box{
+    display: flex;
+}
+.pay{
+   margin-left: 125px;
+   margin-top: 50px;
+   width: 450px;
+   height: 300px;
+   border: 3px solid rgba(128, 128, 128, 0.662);
+}
+.paytitle{
+    height: 70px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.662);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paytitlespan{
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(128, 128, 128);
+}
+.payprice{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+}
+.paypricetitle{
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 19px;
+}
+.paypricenumber{
+    font-weight: bold;
+    font-size: 20px;
+    padding-right: 19px;
+}
+.paybutton{
+    height: 128px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+.paybuttoncs{
+    height: 50px;
+    width: 340px;
+    background-color: rgb(109, 231, 240);
+    border: none;
+    font-weight: bold;
+    color: white;
+    font-size: 21px;
+}
 
 
 

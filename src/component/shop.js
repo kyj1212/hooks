@@ -1,26 +1,49 @@
 import { useNavigate } from 'react-router-dom';
 import {motion} from "framer-motion"
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 
 function Shop(){
+    const useref = useRef()
     const navigate = useNavigate()
-    const [cheesequan,setCheesequan] = useState(0)
+    const [check,setCheck] = useState()
+    const [check2,setCheck2] = useState()
     
-    const price = cheesequan * 19.12
+    function allchecked(event){
+        if(event.target.checked==true){
+            setCheck(true)
+            setCheck2(true)
+        }
 
-    function addbutton(){
-        setCheesequan(cheesequan+1)
+        if(event.target.checked==false){
+            setCheck(false)
+            setCheck2(false)
+        }
     }
-    function subbutton(){
-        if(cheesequan==0){
-            alert("수량을 눌러주세요")
-        }else{
-            setCheesequan(cheesequan-1)
-        }    
+    
+    function personalcheck(event){
+       if(event.target.checked==false){
+        setCheck2(false)
+        setCheck(false)
+       }
+       if(event.target.checked==true){
+        setCheck2(true)
+        setCheck(true)
+       }
+        
+        
     }
+
+  
+
+    function checkremove(){
+
+    }
+    
+
     function homebutton(){
         navigate('/')
     }
+
     function menubutton(event){
         navigate('/menu')
     }
@@ -46,12 +69,12 @@ function Shop(){
             <div className='shoppingtitle'>
                 <h1>장바구니</h1>
             </div>
-
+   
         <div className='box'>
             <div className='testtest'>
                 <div className='shoppingbox'>      
                     <label class='labelbox'>
-                        <input class='checkbox' type="checkbox"/>전체 선택
+                        <input class='checkbox' type="checkbox" onClick={allchecked} checked={check}/>전체 선택
                     </label>
                     <button class='removebutton'>
                         선택 삭제
@@ -62,7 +85,7 @@ function Shop(){
                 </div>
                 <div className='product'>
                     <label class='labelboxcheese'>
-                        <input class='checkbox' type="checkbox"/>
+                        <input class='checkbox' type="checkbox" onClick={personalcheck} checked={check2} ref={useref}/>
                     </label>
                 
                     <div className='productimgdiv'>
@@ -76,8 +99,24 @@ function Shop(){
                     </span>
                 </div>
             </div>       
-            <span className='hell'>asd</span>
+            <span className='pay'>
+                <div className='paytitle'>
+                    <span className='paytitlespan'>
+                        결제예상금액
+                    </span>
+                </div>
+                <div className='payprice'>
+                    <span className='paypricetitle'>결제예상금액</span>
+                    <span className='paypricenumber'>0원</span>
+                </div>
+                <div className='paybutton'>
+                    <button onClick={checkremove} className='paybuttoncs'>
+                        주문하기 (0원)
+                    </button>
+                </div>
+            </span>
         </div>
+    
     </motion.div>
     )
 }
